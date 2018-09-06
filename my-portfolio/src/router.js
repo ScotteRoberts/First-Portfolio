@@ -1,16 +1,10 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./views/Home.vue";
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
-    {
-      path: "/",
-      name: "home",
-      component: Home
-    },
     {
       path: "/about",
       name: "about",
@@ -19,6 +13,31 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/About.vue")
+    },
+    {
+      path: "/fire-emblem",
+      name: "fire-emblem",
+      component: () => import("./views/FireEmblem.vue")
+    },
+    {
+      path: "/",
+      name: "home",
+      component: () => import("./views/Home.vue")
+    },
+    {
+      path: "/ransomware",
+      name: "ransomware",
+      component: () => import("./views/Ransomware.vue")
+    },
+    {
+      path: "/senior-project",
+      name: "senior-project",
+      component: () => import("./views/SeniorProject.vue")
+    },
+    {
+      path: "/swim-mill",
+      name: "swim-mill",
+      component: () => import("./views/SwimMill.vue")
     }
   ]
 });
