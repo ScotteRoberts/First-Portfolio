@@ -1,15 +1,12 @@
 <template>
     <div>
-        <h1>Welcome to Fire Emblem</h1>
+        <h1>Welcome to my Resume.</h1>
     </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
-
 </style>

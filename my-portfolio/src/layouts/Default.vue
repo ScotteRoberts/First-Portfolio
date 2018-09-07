@@ -1,31 +1,15 @@
 <template>
-  <div class="navbar is-transparent" id="nav">
-    <router-link to="/about">About</router-link> |
-    <router-link to="/">Home</router-link> |
-    <router-link to="/ransomware">Mock Ransomware</router-link> |
-    <router-link to="/senior-project">Senior Project</router-link> |
-    <router-link to="/swim-mill">Swim Mill</router-link> |
-    <router-link to="/fire-emblem">Unity Tactics (Fire Emblem)</router-link>
+  <div>
+    <navbar/>
     <router-view/>
   </div>
 </template>
 
 <script>
+import Navbar from "@/components/Navbar"
 export default {
   components: {
+    Navbar
   }
 }
 </script>
-
-<style lang="scss">
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>

@@ -1,56 +1,45 @@
 <template>
-    <nav class="nav">
-  <div class="nav-left">
-    <a class="nav-item is-brand" href="#">
-      <img src="http://bulma.io/images/bulma-type.png" alt="Bulma logo">
-    </a>
-  </div>
-
-  <div class="nav-center">
-    <a class="nav-item" href="#">
-      <span class="icon">
-        <i class="fa fa-github"></i>
-      </span>
-    </a>
-    <a class="nav-item" href="#">
-      <span class="icon">
-        <i class="fa fa-twitter"></i>
-      </span>
-    </a>
-  </div>
-
-  <span id="nav-toggle" class="nav-toggle">
-    <span></span>
-  <span></span>
-  <span></span>
-  </span>
-
-  <div id='nav-menu' class="nav-right nav-menu">
-    <a class="nav-item" href="#">
-      Home
-    </a>
-    <a class="nav-item" href="#">
-      Documentation
-    </a>
-    <a class="nav-item" href="#">
-      Blog
-    </a>
-
-    <span class="nav-item">
-      <a class="button" >
-        <span class="icon">
-          <i class="fa fa-twitter"></i>
-        </span>
-    <span>Tweet</span>
-    </a>
-    <a class="button is-primary" href="#">
-      <span class="icon">
-          <i class="fa fa-download"></i>
-        </span>
-      <span>Download</span>
-    </a>
-    </span>
-  </div>
-</nav>
-
+  <nav class="navbar is-transparent">
+    <div class="navbar-brand">
+      <router-link class="navbar-item" to="/">
+        Scott Roberts
+      </router-link>
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- The is-active is making the hamburger menu open automatically, need js to open and close it. -->
+    <div class="navbar-menu is-active">
+      <div class="navbar-end">
+        <router-link class="navbar-item" to="/about">
+          About
+        </router-link>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <!-- The projects page is not mounting for some reason. -->
+          <router-link class="navbar-link" to="/projects">
+            Projects
+          </router-link>
+          <div class="navbar-dropdown is-boxed">
+            <router-link class="navbar-item" to="/projects/ransomware">
+              Ransomware
+            </router-link>
+            <router-link class="navbar-item" to="/projects/senior-project">
+              Senior Project
+            </router-link>
+            <router-link class="navbar-item" to="/projects/swim-mill">
+              Swim Mill
+            </router-link>
+            <router-link class="navbar-item" to="/projects/unity-tactics">
+              Unity Tactics
+            </router-link>
+          </div>
+        </div>
+        <router-link class="navbar-item" to="/resume">
+          Resume
+        </router-link>
+      </div>
+    </div>
+  </nav>
 </template>

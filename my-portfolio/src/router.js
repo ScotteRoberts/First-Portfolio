@@ -12,32 +12,99 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/About.vue")
-    },
-    {
-      path: "/fire-emblem",
-      name: "fire-emblem",
-      component: () => import("./views/FireEmblem.vue")
+        import(/* webpackChunkName: "about" */ "./views/About.vue"),
+
+      meta: {
+        title: "About | Scott Roberts"
+      },
+      beforeEnter: function(to, from, next) {
+        document.title = to.meta.title;
+        next();
+      }
     },
     {
       path: "/",
       name: "home",
-      component: () => import("./views/Home.vue")
+      component: () => import("./views/Home.vue"),
+      meta: {
+        title: "Home | Scott Roberts"
+      },
+      beforeEnter: function(to, from, next) {
+        document.title = to.meta.title;
+        next();
+      }
     },
     {
-      path: "/ransomware",
+      path: "/projects",
+      name: "projects",
+      component: () => import("./views/Projects.vue"),
+      meta: {
+        title: "Projects | Scott Roberts"
+      },
+      beforeEnter: function(to, from, next) {
+        document.title = to.meta.title;
+        next();
+      }
+    },
+    {
+      path: "/projects/ransomware",
       name: "ransomware",
-      component: () => import("./views/Ransomware.vue")
+      component: () => import("./views/Ransomware.vue"),
+      meta: {
+        title: "Ransomware | Scott Roberts"
+      },
+      beforeEnter: function(to, from, next) {
+        document.title = to.meta.title;
+        next();
+      }
     },
     {
-      path: "/senior-project",
+      path: "/resume",
+      name: "resume",
+      component: () => import("./views/Resume.vue"),
+      meta: {
+        title: "Resume | Scott Roberts"
+      },
+      beforeEnter: function(to, from, next) {
+        document.title = to.meta.title;
+        next();
+      }
+    },
+    {
+      path: "/projects/senior-project",
       name: "senior-project",
-      component: () => import("./views/SeniorProject.vue")
+      component: () => import("./views/SeniorProject.vue"),
+      meta: {
+        title: "Senior Project | Scott Roberts"
+      },
+      beforeEnter: function(to, from, next) {
+        document.title = to.meta.title;
+        next();
+      }
     },
     {
-      path: "/swim-mill",
+      path: "/projects/swim-mill",
       name: "swim-mill",
-      component: () => import("./views/SwimMill.vue")
+      component: () => import("./views/SwimMill.vue"),
+      meta: {
+        title: "Swim Mill | Scott Roberts"
+      },
+      beforeEnter: function(to, from, next) {
+        document.title = to.meta.title;
+        next();
+      }
+    },
+    {
+      path: "/projects/unity-tactics",
+      name: "unity-tactics",
+      component: () => import("./views/UnityTactics.vue"),
+      meta: {
+        title: "Unity Tactics | Scott Roberts"
+      },
+      beforeEnter: function(to, from, next) {
+        document.title = to.meta.title;
+        next();
+      }
     }
   ]
 });
