@@ -49,7 +49,7 @@ export default new Router({
     {
       path: "/projects/ransomware",
       name: "ransomware",
-      component: () => import("./views/Ransomware.vue"),
+      component: () => import("./views/projects/Ransomware.vue"),
       meta: {
         title: "Ransomware | Scott Roberts"
       },
@@ -73,7 +73,7 @@ export default new Router({
     {
       path: "/projects/senior-project",
       name: "senior-project",
-      component: () => import("./views/SeniorProject.vue"),
+      component: () => import("./views/projects/SeniorProject.vue"),
       meta: {
         title: "Senior Project | Scott Roberts"
       },
@@ -85,7 +85,7 @@ export default new Router({
     {
       path: "/projects/swim-mill",
       name: "swim-mill",
-      component: () => import("./views/SwimMill.vue"),
+      component: () => import("./views/projects/SwimMill.vue"),
       meta: {
         title: "Swim Mill | Scott Roberts"
       },
@@ -97,7 +97,7 @@ export default new Router({
     {
       path: "/projects/unity-tactics",
       name: "unity-tactics",
-      component: () => import("./views/UnityTactics.vue"),
+      component: () => import("./views/projects/UnityTactics.vue"),
       meta: {
         title: "Unity Tactics | Scott Roberts"
       },

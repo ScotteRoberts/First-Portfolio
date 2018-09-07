@@ -1,11 +1,16 @@
 <template>
     <div>
-        <h1>Welcome to my Projects.</h1>
+        <multiple-projects/>
     </div>
 </template>
 
 <script>
-export default {};
+import MultipleProjects from "@/templates/MultipleProjects";
+export default {
+  components: {
+    MultipleProjects
+  }
+};
 </script>
 
 <style>

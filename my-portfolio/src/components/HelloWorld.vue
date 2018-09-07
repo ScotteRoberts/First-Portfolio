@@ -1,6 +1,6 @@
 <template>
   <div id="sample" class="hello">
-    <h1>{{ msg }}</h1>
+    <h1 class="title">Welcome to my Portfolio!</h1>
     <p>
       For guide and recipes on how to configure / customize this project,<br>
       check out the

@@ -1,14 +1,14 @@
 <template>
     <div>
-        <resume-template/>
+        <navbar-simple/>
     </div>
 </template>
 
 <script>
-import ResumeTemplate from "@/templates/Resume";
+import NavbarSimple from "@/components/navbars/NavbarSimple";
 export default {
   components: {
-    ResumeTemplate
+    NavbarSimple
   }
 };
 </script>

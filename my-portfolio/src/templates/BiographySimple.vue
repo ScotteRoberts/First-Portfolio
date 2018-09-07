@@ -1,6 +1,8 @@
 <template>
     <div>
-        <h1>Welcome to Fire Emblem</h1>
+        <h1 class="title has-text-centered">
+            Welcome to the Biography
+        </h1>
     </div>
 </template>
 

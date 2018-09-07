@@ -1,18 +1,16 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="And Welcome to Scott Roberts' Portfolio!"/>
+    <front-page/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import FrontPage from "@/templates/FrontPage";
 
 export default {
   name: "home",
   components: {
-    HelloWorld
+    FrontPage
   }
 };
 </script>
@@ -26,4 +24,3 @@ export default {
   color: #2c3e50;
 }
 </style>
-
