@@ -1,17 +1,19 @@
 <template>
   <div>
     <navbar-simple/>
-    <hello-world/>
+    <carousel/>
   </div>
 </template>
 
 <script>
 import NavbarSimple from "@/components/navbars/NavbarSimple";
 import HelloWorld from "@/components/HelloWorld";
+import Carousel from "@/components/Carousel";
 export default {
   components: {
     NavbarSimple,
-    HelloWorld
+    HelloWorld,
+    Carousel
   }
 };
 </script>

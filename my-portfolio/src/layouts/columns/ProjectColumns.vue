@@ -25,6 +25,7 @@
             </div>
             <div class="column is-one-third">
                 <router-link class="box" to="/projects/swim-mill">
+                
                     <h3 class="title">
                         Swim Mill
                     </h3>
