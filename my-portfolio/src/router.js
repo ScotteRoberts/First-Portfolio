@@ -6,6 +6,14 @@ Vue.use(Router);
 export default new Router({
   routes: [
     {
+      path: "https://github.com/ScotteRoberts",
+      name: "githubProfile"
+    },
+    {
+      path: "https://linkedin.com/scott-e-roberts",
+      name: "linkedinProfile"
+    },
+    {
       path: "/about",
       name: "about",
       // route level code-splitting

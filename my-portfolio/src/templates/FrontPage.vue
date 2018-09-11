@@ -2,18 +2,19 @@
   <div>
     <navbar-simple/>
     <carousel/>
+    <footer-simple/>
   </div>
 </template>
 
 <script>
 import NavbarSimple from "@/components/navbars/NavbarSimple";
-import HelloWorld from "@/components/HelloWorld";
 import Carousel from "@/components/Carousel";
+import FooterSimple from "@/components/navbars/FooterSimple";
 export default {
   components: {
     NavbarSimple,
-    HelloWorld,
-    Carousel
+    Carousel,
+    FooterSimple
   }
 };
 </script>
