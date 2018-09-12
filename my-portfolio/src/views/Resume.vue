@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ResumeTemplate from "@/templates/Resume";
+import ResumeTemplate from "@/templates/ResumeTemplate";
 export default {
   components: {
     ResumeTemplate

@@ -1,45 +1,16 @@
 import Vue from "vue";
-import {
-  Vuetify,
-  VApp,
-  VNavigationDrawer,
-  VFooter,
-  VList,
-  VBtn,
-  VIcon,
-  VImg,
-  VGrid,
-  VToolbar,
-  VCard,
-  VCarousel,
-  VMenu,
-  transitions
-} from "vuetify";
-import "vuetify/src/stylus/app.styl";
+import Vuetify from "vuetify";
+import "vuetify/dist/vuetify.min.css";
 
+// These fucking themes are not working as they should...
 Vue.use(Vuetify, {
-  components: {
-    VApp,
-    VNavigationDrawer,
-    VFooter,
-    VList,
-    VBtn,
-    VIcon,
-    VImg,
-    VGrid,
-    VToolbar,
-    VCard,
-    VCarousel,
-    VMenu,
-    transitions
-  },
   theme: {
-    primary: "#ee44aa",
-    secondary: "#424242",
-    accent: "#82B1FF",
-    error: "#FF5252",
-    info: "#2196F3",
-    success: "#4CAF50",
-    warning: "#FFC107"
+    primary: "#00695C",
+    secondary: "#004D40",
+    accent: "#8D6E63",
+    error: "#D50000",
+    warning: "#FFC107",
+    info: "#2962FF",
+    success: "#8BC34A"
   }
 });

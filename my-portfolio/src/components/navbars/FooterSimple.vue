@@ -1,25 +1,25 @@
 <template>
   <v-footer
-    height="auto"
+  dark
+  height="auto"
+  class="secondary"
   >
     <v-card
-      class="green white--text flex"
+      class="secondary flex"
     >
-      <v-card-text class="white--text">
-        &copy; {{copyright.year}} -- <b>{{copyright.owner}}</b>
-        <v-btn 
+      <v-card-text>
+        <strong class="subheading white--text">&copy;{{copyright.year}} — <b>{{copyright.owner}}</b></strong>
+
+        <v-btn
           v-for="(socialMediaIcon, index) in socialMediaIcons"
-          :key=index
+          :key="index"
           :href="socialMediaIcon.link"
-          class="small white--text"
-          fab
+          class="mx-3"
+          dark
           icon
         >
-          <v-icon>
-            {{ socialMediaIcon.icon }}
-          </v-icon>
+          <v-icon size="24px">{{ socialMediaIcon.icon }}</v-icon>
         </v-btn>
-
       </v-card-text>
     </v-card>
   </v-footer>

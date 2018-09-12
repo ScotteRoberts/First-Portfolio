@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import AboutTemplate from "@/templates/About";
+import AboutTemplate from "@/templates/AboutTemplate";
 export default {
   components: {
     AboutTemplate

@@ -9,7 +9,6 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
-    "bulma": "^0.7.1",
     "bulma-carousel": "^3.0.0",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.17",

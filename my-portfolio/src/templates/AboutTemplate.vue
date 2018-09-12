@@ -1,20 +1,20 @@
 <template>
     <div>
         <navbar-simple/>
-        <contacts/>
-        <biography-simple/>
+        <contacts-template/>
+        <biography-template/>
     </div>
 </template>
 
 <script>
 import NavbarSimple from "@/components/navbars/NavbarSimple";
-import Contacts from "@/templates/Contacts";
-import BiographySimple from "@/templates/BiographySimple";
+import ContactsTemplate from "@/templates/ContactsTemplate";
+import BiographyTemplate from "@/templates/BiographyTemplate";
 export default {
   components: {
     NavbarSimple,
-    Contacts,
-    BiographySimple
+    ContactsTemplate,
+    BiographyTemplate
   }
 };
 </script>
