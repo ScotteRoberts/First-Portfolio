@@ -11,10 +11,7 @@
       slot="displayItem"
       v-for="(project, index) in projects"
       :key=index
-      :project="project">
-      </project-card>
-     
-      
+      :project="project"/>
       <footer-simple slot="footer"/>
     </headline-and-gallary-layout>
 </template>

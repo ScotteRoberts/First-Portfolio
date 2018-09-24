@@ -1,7 +1,8 @@
 <template>
   <base-layout>
     <navbar-simple slot="header"/>
-    <carousel/>
+    <carousel slot="content"
+    :carouselItems="carouselItems"/>
     <footer-simple slot="footer"/>
   </base-layout>
 </template>
@@ -17,6 +18,9 @@ export default {
     NavbarSimple,
     Carousel,
     FooterSimple
+  },
+  props: {
+    carouselItems: Object
   }
 };
 </script>

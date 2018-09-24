@@ -1,20 +1,27 @@
 <template>
-    <div>
-        <navbar-simple/>
-        <contacts-template/>
-        <biography-template/>
-    </div>
+    <sidebar-left>
+      <navbar-simple slot="header"/>
+      <div slot="contentLeft">
+        <contact-card/>
+      </div>
+      <div slot="contentRight">
+        <contact-card/>
+      </div>
+      <footer-simple slot="footer"/>
+    </sidebar-left>
 </template>
 
 <script>
 import NavbarSimple from "@/components/navbars/NavbarSimple";
-import ContactsTemplate from "@/templates/ContactsTemplate";
-import BiographyTemplate from "@/templates/BiographyTemplate";
+import FooterSimple from "@/components/navbars/FooterSimple";
+import ContactCard from "@/components/cards/ContactCard";
+import SidebarLeft from "@/layouts/SidebarLeft";
 export default {
   components: {
     NavbarSimple,
-    ContactsTemplate,
-    BiographyTemplate
+    FooterSimple,
+    ContactCard,
+    SidebarLeft
   }
 };
 </script>
