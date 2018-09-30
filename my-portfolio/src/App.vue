@@ -1,7 +1,9 @@
 <template>
+  <!-- Entry point for main application -->
   <div id="app">
     <v-app>
-      <router-view/>
+      <!-- Displays a "view" from the view folder -->
+      <router-view />
     </v-app>
   </div>
 </template>

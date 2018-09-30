@@ -1,8 +1,9 @@
+// Global imports
 import "@babel/polyfill"; //
 import Vue from "vue"; // Vue Integration
 import App from "./App.vue"; // Application Entry point in HTML
 import router from "./router"; // Vue-router Integration point
-import "./plugins/vuetify";
+import "./plugins/vuetify"; // Vue CLI Plugin - Vuetify
 import "@fortawesome/fontawesome-free/css/all.css"; // Font Awesome Icons Integration
 import "./registerServiceWorker"; // PWA integration
 

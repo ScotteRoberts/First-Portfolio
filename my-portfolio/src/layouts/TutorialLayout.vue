@@ -2,8 +2,7 @@
     <div>
         <slot name="header"></slot>
         <main>
-            <v-container 
-            fluid>
+            <v-container fluid>
                 <slot name="pageTitle"></slot>
                 <slot name="pageDescription"></slot>
                 <slot name="tutorial"></slot>

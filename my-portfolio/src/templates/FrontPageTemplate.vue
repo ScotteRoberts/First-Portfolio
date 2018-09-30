@@ -1,9 +1,8 @@
 <template>
   <base-layout>
-    <navbar-simple slot="header"/>
-    <carousel slot="content"
-    :carouselItems="carouselItems"/>
-    <footer-simple slot="footer"/>
+    <navbar-simple slot="header" />
+    <carousel slot="content" :carouselItems="carouselItems" />
+    <footer-simple slot="footer" />
   </base-layout>
 </template>
 

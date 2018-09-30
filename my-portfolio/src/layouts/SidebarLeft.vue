@@ -2,8 +2,7 @@
     <div>
         <slot name="header"></slot>
         <main>
-            <v-container 
-            fluid>
+            <v-container fluid>
                 <v-layout>
                     <v-flex>
                         <slot name="contentLeft"></slot>
@@ -11,7 +10,7 @@
                     <v-flex>
                         <slot name="contentRight"></slot>
                     </v-flex>
-                    
+
                 </v-layout>
             </v-container>
         </main>

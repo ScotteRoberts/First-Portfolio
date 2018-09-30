@@ -1,6 +1,6 @@
 <template>
   <tutorial-layout>
-    <navbar-simple slot="header"/>
+    <navbar-simple slot="header" />
     <h1 slot="pageTitle">
       {{pageInformation.title}}
     </h1>
@@ -10,7 +10,7 @@
     <h1 slot="tutorial">
       Tutorial Slot... Description coming soon.
     </h1>
-    <footer-simple slot="footer"/>
+    <footer-simple slot="footer" />
   </tutorial-layout>
 </template>
 

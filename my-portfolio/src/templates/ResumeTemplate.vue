@@ -1,6 +1,6 @@
 <template>
     <div>
-        <navbar-simple/>
+        <navbar-simple />
         <h1 class="title has-text-centered">
             Welcome to the Resume Template
         </h1>

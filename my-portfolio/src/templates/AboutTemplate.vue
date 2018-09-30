@@ -1,14 +1,14 @@
 <template>
-    <sidebar-left>
-      <navbar-simple slot="header"/>
-      <div slot="contentLeft">
-        <contact-card/>
-      </div>
-      <div slot="contentRight">
-        <contact-card/>
-      </div>
-      <footer-simple slot="footer"/>
-    </sidebar-left>
+  <sidebar-left>
+    <navbar-simple slot="header" />
+    <div slot="contentLeft">
+      <contact-card />
+    </div>
+    <div slot="contentRight">
+      <contact-card />
+    </div>
+    <footer-simple slot="footer" />
+  </sidebar-left>
 </template>
 
 <script>
