@@ -5,7 +5,7 @@
         <v-layout align-center justify-center row fill-height>
           <v-card>
             <!-- Consider when you don't want text, what will you do? -->
-            <v-card-title class="display-3">
+            <v-card-title class="display-1">
               {{item.text}}
             </v-card-title>
           </v-card>

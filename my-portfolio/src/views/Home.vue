@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <front-page-template
-    :carouselItems="carouselItems"/>
+    <front-page-template :carouselItems="carouselItems" />
   </div>
 </template>
 
