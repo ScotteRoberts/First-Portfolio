@@ -3,7 +3,7 @@
     <v-btn flat :to="{ name: 'home' }">
       <v-list-tile avatar>
         <v-list-tile-avatar>
-          <img src="../../../public/img/ScottRoberts_Aquatics_Oct24-2.jpg">
+          <img src="@/assets/img/ScottRoberts_Aquatics_Oct24-2.jpg">
       </v-list-tile-avatar>
 
           <v-list-tile-content>

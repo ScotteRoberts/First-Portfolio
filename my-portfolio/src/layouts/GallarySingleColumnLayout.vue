@@ -3,9 +3,11 @@
     <slot name="header"></slot>
     <main>
       <v-container fluid>
-        <slot name="pageTitle"></slot>
-        <slot name="pageDescription"></slot>
-        <slot name="tutorial"></slot>
+        <v-layout align-center justify-space-around wrap>
+          <v-flex>
+            <slot name="displayItem"></slot>
+          </v-flex>
+        </v-layout>
       </v-container>
       <slot></slot>
     </main>

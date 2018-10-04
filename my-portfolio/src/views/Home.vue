@@ -16,29 +16,29 @@ export default {
     return {
       carouselItems: [
         {
-          // Google or yahoo image... i.ytimg.com
-          src: "https://i.ytimg.com/vi/SDfKBI3UKZQ/maxresdefault.jpg",
+          // Reason for needing Require is because of webpack not understanding the javascript url
+          // https://stackoverflow.com/questions/43447753/vue-js-assets-filepath-when-using-v-for#43448974
+          src: require("@/assets/img/HuntingtonBeachPierDusk.jpg"),
           text: "Enjoy Life"
         },
         {
           // Imagur: Neil Peart Drum Kit
-          src: "https://i.imgur.com/EEimk6t.jpg",
+          src: require("@/assets/img/NeilPeartDrumSet.jpg"),
           text: "Motivate Others"
         },
         {
           // Wallpaper Safari: https://wallpapersafari.com/
-          src: "https://cdn.wallpapersafari.com/44/25/wWnd8E.jpg",
+          src: require("@/assets/img/CodeWall.jpg"),
           text: "Practice Craft"
         },
         {
           // Medium.com
-          src:
-            "https://cdn-images-1.medium.com/max/1200/1*eOsXGBKBrrTZLkNMoK-JXg.jpeg",
+          src: require("@/assets/img/MacOnWoodTable.jpeg"),
           text: "Work Hard"
         },
         {
           // Wallpaper Safari
-          src: "https://cdn.wallpapersafari.com/36/20/8k5UZW.jpg",
+          src: require("@/assets/img/ClassicVideoGameControllers.jpg"),
           text: "Have Fun"
         }
       ]

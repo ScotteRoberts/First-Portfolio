@@ -1,8 +1,5 @@
 <template>
-    <multiple-projects-template
-    :pageInformation="pageInformation"
-    :projects="projects"
-    />
+  <multiple-projects-template :pageInformation="pageInformation" :projects="projects" />
 </template>
 
 <script>
@@ -20,30 +17,25 @@ export default {
       },
       projects: [
         {
-          src:
-            "http://wallpapercave.net/images/samsung-galaxy-default-wallpaper/samsung-galaxy-default-wallpaper-18.jpg",
-
-          name: "Extracurricular Schooling",
-          description: "Senior project | web app",
+          src: require("@/assets/img/ECS_Screenshot.png"),
+          // name: "Extracurricular Schooling",
+          // description: "Senior project | web app",
           routeName: "senior-project"
         },
         {
-          src:
-            "http://wallpapercave.net/images/samsung-galaxy-default-wallpaper/samsung-galaxy-default-wallpaper-18.jpg",
+          src: require("@/assets/img/PythonProgrammingIcon.png"),
           name: "Ransomware",
           description: "Security project | standalone App",
           routeName: "ransomware"
         },
         {
-          src:
-            "http://wallpapercave.net/images/samsung-galaxy-default-wallpaper/samsung-galaxy-default-wallpaper-18.jpg",
+          src: require("@/assets/img/SwimMillScreenshot.png"),
           name: "Swim Mill",
           description: "OS project | standlone App",
           routeName: "swim-mill"
         },
         {
-          src:
-            "http://wallpapercave.net/images/samsung-galaxy-default-wallpaper/samsung-galaxy-default-wallpaper-18.jpg",
+          src: require("@/assets/img/FireEmblemMap.png"),
           name: "Unity Tactics",
           description: "Unity game | standalone app",
           routeName: "unity-tactics"

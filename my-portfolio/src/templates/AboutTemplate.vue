@@ -2,7 +2,7 @@
   <sidebar-left>
     <navbar-simple slot="header" />
     <div slot="contentLeft">
-      <contact-card />
+      <contact-card :cardInformation="contactInformation" />
     </div>
     <div slot="contentRight">
       <title-text-card slot="contentRight" v-for="(abstraction, index) in lifeAbstractions" :key=index :cardInformation="abstraction" />
@@ -26,6 +26,7 @@ export default {
     SidebarLeft
   },
   props: {
+    contactInformation: Object,
     lifeAbstractions: Array
   }
 };

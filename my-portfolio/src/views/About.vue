@@ -1,6 +1,6 @@
 <template>
   <div>
-    <about-template :lifeAbstractions="lifeAbstractions" />
+    <about-template :contactInformation="contactInformation" :lifeAbstractions="lifeAbstractions" />
   </div>
 </template>
 
@@ -12,6 +12,12 @@ export default {
   },
   data: function() {
     return {
+      contactInformation: {
+        img: require("@/assets/img/SunsetDock.jpg"),
+        aspectRatio: 1.33,
+        email: "Email: s.e.roberts0@gmail.com",
+        mobilePhone: "Phone: 714) 833-7051"
+      },
       lifeAbstractions: [
         {
           title: "Personal",

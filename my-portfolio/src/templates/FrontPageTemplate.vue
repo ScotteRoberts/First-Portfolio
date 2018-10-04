@@ -19,7 +19,7 @@ export default {
     FooterSimple
   },
   props: {
-    carouselItems: Object
+    carouselItems: Array
   }
 };
 </script>
