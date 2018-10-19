@@ -2,7 +2,8 @@
   <v-hover>
     <v-card slot-scope="{ hover }" :class="`elevation-${hover ? 12 : 2}`">
       <v-card-title>
-        <span class='headline'>{{cardInformation.title}}</span>
+        <!-- Not functional yet... -->
+        <a class='headline' :href="cardInformation.downloadLink" :download="cardInformation.title">{{cardInformation.title}}</a>
         <v-spacer></v-spacer>
         <v-card-actions>
           <v-btn icon @click="show = !show">

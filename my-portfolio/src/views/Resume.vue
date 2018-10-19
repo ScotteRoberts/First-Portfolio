@@ -20,7 +20,7 @@ export default {
           width: "480px",
           aspectRatio: 0.8,
           downloadName: "ScottRoberts_MasterResume",
-          downloadLink: "../assets/doc/MasterResume.pdf"
+          downloadLink: require("@/assets/doc/MasterResume.pdf")
         },
         {
           title: "Software Engineering",
@@ -29,7 +29,7 @@ export default {
           width: "320px",
           aspectRatio: 0.8,
           downloadName: "ScottRoberts_Resume",
-          downloadLink: "../assets/doc/ScottRoberts_Resume.pdf"
+          downloadLink: require("@/assets/doc/ScottRoberts_Resume.pdf")
         }
       ]
     };
