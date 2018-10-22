@@ -1,9 +1,9 @@
 <template>
-  <v-footer dark height="auto" class="secondary">
+  <v-footer app height="auto">
     <v-card class="secondary flex">
       <v-card-text>
         <strong class="subheading white--text">&copy;{{copyright.year}} — <b>{{copyright.owner}}</b></strong>
-        <v-btn v-for="(socialMediaIcon, index) in socialMediaIcons" :key="index" :href="socialMediaIcon.link" class="mx-3" dark icon>
+        <v-btn v-for="(socialMediaIcon, index) in socialMediaIcons" :key="index" :href="socialMediaIcon.link" dark icon>
           <v-icon size="24px">{{ socialMediaIcon.icon }}</v-icon>
         </v-btn>
       </v-card-text>

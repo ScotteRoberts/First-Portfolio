@@ -1,7 +1,7 @@
 <template>
   <div>
     <slot name="header"></slot>
-    <main>
+    <v-content>
       <v-container fluid>
         <!-- Desktop Layout -->
         <v-layout class="hidden-sm-and-down">
@@ -25,7 +25,7 @@
           </v-flex>
         </v-layout>
       </v-container>
-    </main>
+    </v-content>
     <slot name="footer"></slot>
   </div>
 </template>

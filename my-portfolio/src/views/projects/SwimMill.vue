@@ -1,8 +1,7 @@
 <template>
-    <single-project-template
-    :pageInformation="pageInformation">
+  <single-project-template :pageInformation="pageInformation">
 
-    </single-project-template>
+  </single-project-template>
 </template>
 
 <script>

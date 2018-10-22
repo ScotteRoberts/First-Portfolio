@@ -1,7 +1,7 @@
 <template>
   <div>
     <slot name="header"></slot>
-    <main>
+    <v-content>
       <v-container fluid>
         <v-layout align-center justify-space-around wrap>
           <v-flex>
@@ -10,7 +10,7 @@
         </v-layout>
       </v-container>
       <slot></slot>
-    </main>
+    </v-content>
     <slot name="footer"></slot>
   </div>
 </template>
