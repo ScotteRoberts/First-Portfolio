@@ -1,6 +1,6 @@
 <template>
   <div>
-    <about-template :contactInformation="contactInformation" :lifeAbstractions="lifeAbstractions" />
+    <about-template :contactInformation="contactInformation" :lifeAbstractions="lifeAbstractions" :references="references" />
   </div>
 </template>
 
@@ -63,26 +63,18 @@ export default {
                 "Health is an important factor of everyone’s life and should be highlighted. According to WellSteps, a blog dedicated providing education on employee wellness solutions, a healthy employee has: improved behavior, improved productivity, and less cost in medical coverage. I take personal pride in living a healthy, active lifestyle and follow the recommendations given in each of the sections below."
             },
             {
-              text:
-                "WellSteps Reference: https://www.wellsteps.com/blog/2018/01/06/workplace-wellness-statistics-wellness-stats/"
-            },
-            {
               subtitle: "Hydration",
               text:
                 "The human body is around 60% water. That water is expelled from the body due to breathing, sweating urinating and bowel movements to perform important bodily functions such as: reducing internal temperature, removing waste from the body, and cushioning joints and tissues."
             },
             {
               text:
-                '"Lack of water can lead to dehydration — a condition that occurs when you don\'t have enough water in your body to carry out normal functions. Even mild dehydration can drain your energy and make you tired." Therefore, it is important to drink water to replenish your internal supply of water and maintain regular energy levels. Water intake differs by region, sex, physical fitness, and overall health. Furthermore, 20% of water intake comes from food. In temperate regions, men and women are recommended to intake: Men: 3.7L (~1 gallon) of water, Women: 2.7L (~0.7 gallons) of water.'
+                '"Lack of water can lead to dehydration — a condition that occurs when you don\'t have enough water in your body to carry out normal functions. Even mild dehydration can drain your energy and make you tired," says Dr. Steve Aldana, author at WellSteps. Therefore, it is important to drink water to replenish your internal supply of water and maintain regular energy levels. Water intake differs by region, sex, physical fitness, and overall health. Furthermore, 20% of water intake comes from food. In temperate regions, men and women are recommended to intake: Men: 3.7L (~1 gallon) of water, Women: 2.7L (~0.7 gallons) of water.'
             },
             {
               subtitle: "Sleep",
               text:
-                "According to the Center for Disease Control (CDC), an adult (18 - 60 years old) is recommended to sleep seven or more hours a night. This sleep should also be a “good quality sleep” that allows you to fully rest. Lack of feeling rested, restlessness, and symptoms of sleep disorders all affect sleep and should resolved as quickly as possible to increase personal energy and mood."
-            },
-            {
-              text:
-                "CDC Reference: https://www.cdc.gov/sleep/about_sleep/how_much_sleep.html"
+                "According to the Center for Disease Control (CDC), an adult (18 - 60 years old) is recommended to sleep 7+ hours a night. This sleep should also be a “good quality sleep” that allows you to fully rest. Lack of feeling rested, restlessness, and symptoms of sleep disorders all affect sleep and should resolved as quickly as possible to increase personal energy and mood."
             },
             {
               subtitle: "Diet",
@@ -105,12 +97,32 @@ export default {
             {
               text:
                 "“Muscle-strengthening activities should be done involving major muscle groups on 2 or more days a week.”"
-            },
-            {
-              text:
-                "WHO Reference: http://www.who.int/dietphysicalactivity/factsheet_adults/en/"
             }
           ]
+        }
+      ],
+      references: [
+        {
+          title: "5 Workplace Wellness Statistics Every Employer Should Know",
+          author: "Dr. Steve Aldana",
+          url:
+            "https://www.wellsteps.com/blog/2018/01/06/workplace-wellness-statistics-wellness-stats/",
+          dateOfPub: Date(2018, 9, 19),
+          dateOfRetrieval: Date(2018, 10, 20)
+        },
+        {
+          title: "How Much Sleep Do I Need?",
+          author: "Center for Disease Control and Prevention",
+          url: "https://www.cdc.gov/sleep/about_sleep/how_much_sleep.html",
+          dateOfPub: Date(2017, 3, 2),
+          dateOfRetrieval: Date(2018, 10, 20)
+        },
+        {
+          title: "Physical Activity and Adults",
+          author: "World Health Organization",
+          url: "http://www.who.int/dietphysicalactivity/factsheet_adults/en/",
+          dateOfPub: "",
+          dateOfRetrieval: Date(2018, 10, 20)
         }
       ]
     };

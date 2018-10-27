@@ -1,11 +1,13 @@
 <template>
-  <v-card>
-    <h1 style="text-align: center" v-if="references.length > 0">References</h1>
+  <v-card v-if="references.length > 0">
+    <v-card-title>
+      <span class='display-1'>References</span>
+    </v-card-title>
     <v-list>
       <v-list-tile v-for="(reference, index) in references" :key="index" :href="reference.url">
         <v-list-tile-content>
           <v-list-tile-title>
-            {{reference.title}}
+            {{reference.author}} - {{reference.title}}
           </v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>

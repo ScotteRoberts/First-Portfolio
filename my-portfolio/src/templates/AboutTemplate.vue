@@ -5,7 +5,8 @@
       <contact-card :cardInformation="contactInformation" />
     </div>
     <div slot="contentRight">
-      <title-text-card slot="contentRight" v-for="(abstraction, index) in lifeAbstractions" :key=index :cardInformation="abstraction" />
+      <title-text-card v-for="(abstraction, index) in lifeAbstractions" :key=index :cardInformation="abstraction" />
+      <reference-card :references="references" />
     </div>
     <footer-simple slot="footer" />
   </sidebar-left>
@@ -15,6 +16,7 @@
 import NavbarSimple from "@/components/navbars/NavbarSimple";
 import FooterSimple from "@/components/navbars/FooterSimple";
 import ContactCard from "@/components/cards/ContactCard";
+import ReferenceCard from "@/components/cards/ReferenceCard";
 import TitleTextCard from "@/components/cards/TitleTextCard";
 import SidebarLeft from "@/layouts/SidebarLeft";
 export default {
@@ -22,12 +24,14 @@ export default {
     NavbarSimple,
     FooterSimple,
     ContactCard,
+    ReferenceCard,
     TitleTextCard,
     SidebarLeft
   },
   props: {
     contactInformation: Object,
-    lifeAbstractions: Array
+    lifeAbstractions: Array,
+    references: Array
   }
 };
 </script>
